@@ -17,8 +17,8 @@ class TestDaemon < Daemon
   end
   
   def log(text)
-    File.open('log.txt', 'a') { |f| f.puts "#{Time.now}: #{text}" }
+    File.open(File.expand_path("../log.txt", ENV["OCRA_EXECUTABLE"] || __FILE__) , 'a') { |f| f.puts "#{Time.now}: #{text}" }
   end
 end
 
-TestDaemon.mainloop
+TestDaemon.mainloop unless defined?(Ocra)

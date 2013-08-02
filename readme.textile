@@ -1,3 +1,3 @@
-A simple example of a Windows Service implemented in Ruby.
+A simple Windows Service implemented in Ruby bundled into standalone executables.
 
-More info http://abstractcoder.com/2013/07/18/create-a-windows-service-with-ruby-part-1.html
+More info http://abstractcoder.com/2013/08/02/create-a-windows-service-with-ruby-part-2.html
